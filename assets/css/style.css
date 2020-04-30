@@ -2,23 +2,24 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1;
+    background-color: #ffffff;
   }
   
   textarea{
-    background: transparent;
-    border: none;
     resize: none;
     color: #000000;
     border-left: 1px solid black;
     padding: 10px;
+    margin-top: 1px;
   }
   
   .jumbotron {
     text-align: center;
-    background-color: transparent;
-    color: black;
+    background-color: rgb(185, 201, 185);
+    color:#ffffff;
     border-radius: 0;
-    border-bottom: 10px solid black;
+    border-bottom: 8px solid black;
+    background-image: url(/assets/image/img.gif);
   }
   
   .description{
@@ -32,7 +33,7 @@ body {
   
   .row {
     white-space: pre-wrap;
-    height: 80px;
+    height: 60px;
     border-top: 1px solid white;;
   }
   
@@ -40,6 +41,7 @@ body {
     background-color: #ffffff;
     color: #000000;
     border-top: 1px dashed #000000;
+    margin-right:10px ;
   }
   
   .past {
