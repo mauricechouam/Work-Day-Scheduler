@@ -1,10 +1,16 @@
 var m = moment();
+var $currentday = $("#currentDay");
+var $currentime = $("#currentime");
+var $description = $(".description");
+var $save = $(".saveBtn");
+var $hour = $(".hour");
 
-var currentday = $("#currentDay");
-var currentime = $("#currentime");
 
- currentday.text(m.format('LLLL').toString());
-currentime.text(m.format("LT"));
+
+
+
+$currentday.text(m.format('LLLL').toString());
+$currentime.text(m.format("LT"));
 
 // Function to Display the pass tim
 passtime = function () {
@@ -28,7 +34,18 @@ futurtime = function () {
         $("#ftime" + i).text(m.add(i, 'h').format("LT"));
     }
 }
-    
 // calling Time Display Functions 
 futurtime();
 passtime();
+
+
+//ONCLICK
+$(".saveBtn").on("click", function (e) {
+    e.preventDefault();
+    var textArea = $(this).siblings(".description").val();
+    var hour = $(this).parent().attr("id");
+    console.log(hour);
+    localStorage.setItem(hour, textArea);
+
+})
+$(".description").val(localStorage.getItem(textArea));
