@@ -1,15 +1,34 @@
-const m = moment();
+var m = moment();
 
 var currentday = $("#currentDay");
 var currentime = $("#currentime");
-var format= 
 
-currentday.text(m.format('LLLL').toString());
-currentime.text(m.format("LT").toString());
+ currentday.text(m.format('LLLL').toString());
+currentime.text(m.format("LT"));
 
-for (var i = 1; i <= 5; i++){
-    var a = $("#ftime" + i).text(m.add(i, "h")).text(m.format('LT').toString());
-    var b = $("#ptime" + i).text(m.subtract("h",i)).text(m.format('LT').toString());
-   
-
+// Function to Display the pass tim
+passtime = function () {
+    for (var i = 1; i <= 5; i++) {
+        var m = moment();
+        // set Minute to 00
+        m.minutes("");
+        //change Moment Fromat
+        m.format("h")
+        $("#ptime" + i).text(m.subtract(i, 'h').format("LT"));   
+    }
+}  
+// Fucntion to Display the Furtur time
+futurtime = function () {
+    for (var i = 1; i <= 5; i++) {
+        var m = moment();
+        // set Minute to 00
+        m.minutes("");
+         //change Moment Fromat
+        moment().format("h")
+        $("#ftime" + i).text(m.add(i, 'h').format("LT"));
+    }
 }
+    
+// calling Time Display Functions 
+futurtime();
+passtime();
