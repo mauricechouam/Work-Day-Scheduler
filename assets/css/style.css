@@ -3,7 +3,12 @@ body {
   font-size: 16px;
   line-height: 1;
   background-color: rgb(224, 207, 207);
-  
+  background-image: url("/assets/image/img3.jpg");
+  height: 50%;
+  background-repeat: repeat;
+  background-size: 800px;
+  background-position: center;
+
 }
 
 textarea{
@@ -23,8 +28,8 @@ textarea{
   border-radius: 0;
   border-bottom: 10px solid black;
   padding: 2px;
-  background-color: black;
-  
+  background-color: rgb(51, 130, 167);
+   
   
 }
 
@@ -50,6 +55,7 @@ textarea{
   font-size: 14px;
   font-weight: bold;
   text-align: center;
+  background-color: rgb(219, 159, 46);
 
   
 }
