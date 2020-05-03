@@ -8,7 +8,7 @@ var $hour = $(".hour");
 $currentday.text(m.format('LLL').toString());
 $currentime.text(m.format("LT"));
 
-// Function to Display the pass time
+// Function to Display the passed time
 passtime = function () {
     for (var i = 1; i <= 5; i++) {
         var m = moment();
