@@ -9,7 +9,7 @@ var $hour = $(".hour");
 
 
 
-$currentday.text(m.format('LLLL').toString());
+$currentday.text(m.format('LLL').toString());
 $currentime.text(m.format("LT"));
 
 // Function to Display the pass tim
@@ -40,11 +40,23 @@ passtime();
 
 
 //Clic Event Fucntio
-$(".saveBtn").on("click", function (e) {
-    e.preventDefault();
-    var textArea = $(this).siblings(".description1").val();
-    var hour = $(this).parent().attr("id");
-    console.log(hour);
-    localStorage.setItem(hour, textArea);
+$(".saveBtn").on("click", function () {
+    console.log(this);
+    
+    const timeID = $(this).siblings(".description").attr("data-time");
+ 
+
+    const UserEnter = $(this).siblings(".description").val();
+        
+        console.log(timeID);
+      
+        console.log(UserEnter);
+    
+    
+    
+ 
 })
+
+
+
 

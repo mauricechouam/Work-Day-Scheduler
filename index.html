@@ -23,65 +23,89 @@
     <p id="currentDay" class="lead"></p>
   </header>
 
+  <!-- Timeblocks go here -->
   <div class="container ">
-    <!-- Timeblocks go here -->
     <div class="row">
-      <p class="hour" id="ptime3">2</p>
-      <textarea class="past description1 " cols="100"></textarea>
-      <button class="saveBtn">&#x1F4BE</button>
-    </div>
-
-    <div class=" row">
-      <div><p class="hour" id="ptime2">3</p></div>
-      <textarea class="past description2 " cols="100"></textarea>
-      <button class="saveBtn">&#x1F4BE</button>
-    </div>
-    <div class="  row">
-      <p class="hour" id="ptime1">4</p>
-      <textarea class=" past description3  " cols="100"></textarea>
-      <button class="saveBtn">&#x1F4BE</button>
-    </div>
-
-    <div class="  row ">
-      <p class="hour" id="currentime">3</p>
-      <textarea class="present  description4" cols="100"></textarea>
-      <button class="saveBtn">&#x1F4BE</button>
+      <!--Time section-->
+      <div class="col-md-1 hour" id="ptime3"></div>
+      <!--Description-->
+      <textarea class="past description col-md-10" data-time="ptime3"></textarea>
+      <!-- save button-->
+      <button class=" saveBtn col-md-1">&#x1F4BE</button>
     </div>
 
     <div class="row">
-      <p class="hour" id="ftime1">1</p>
-      <textarea class="future description5" cols="100"></textarea>
-      <button class="saveBtn">&#x1F4BE</button>
+      <!--Time section-->
+      <div class="col-md-1 hour" id="ptime2"></div>
+      <!--Description-->
+      <textarea class="past description col-md-10" data-time="ptime2"></textarea>
+      <!-- save button-->
+      <button class=" saveBtn col-md-1">&#x1F4BE</button>
+    </div>
+
+    <div class="row">
+      <!--Time section-->
+      <div class="col-md-1 hour" id="ptime1"></div>
+      <!--Description-->
+      <textarea class="past description col-md-10" data-time="ptime1"></textarea>
+      <!-- save button-->
+      <button class=" saveBtn col-md-1">&#x1F4BE</button>
+    </div>
+    
+    <div class="row">
+      <!--Time section-->
+      <div class="col-md-1 hour" id="currentime"></div>
+      <!--Description-->
+      <textarea class="present description col-md-10" data-time="currentime"></textarea>
+      <!-- save button-->
+      <button class=" saveBtn col-md-1">&#x1F4BE</button>
+    </div>
+
+    <div class="row">
+      <!--Time section-->
+      <div class="col-md-1 hour" id="ftime1"></div>
+      <!--Description-->
+      <textarea class="future description col-md-10" data-time="ftime1"></textarea>
+      <!-- save button-->
+      <button class=" saveBtn col-md-1">&#x1F4BE</button>
     </div>
     <div class="row">
-      <p class="hour" id="ftime2">2</p>
-      <textarea class="future description6" cols="100"></textarea>
-      <button class="saveBtn">&#x1F4BE</button>
+      <!--Time section-->
+      <div class="col-md-1 hour" id="ftime2"></div>
+      <!--Description-->
+      <textarea class="future description col-md-10" data-time="ftime2"></textarea>
+      <!-- save button-->
+      <button class=" saveBtn col-md-1">&#x1F4BE</button>
     </div>
     <div class="row">
-      <p class="hour" id="ftime3">3</p>
-      <textarea class="future description7" cols="100"></textarea>
-      <button class="saveBtn">&#x1F4BE</button>
+      <!--Time section-->
+      <div class="col-md-1 hour" id="ftime3"></div>
+      <!--Description-->
+      <textarea class="future description col-md-10" "></textarea>
+      <!-- save button-->
+      <button class=" saveBtn col-md-1">&#x1F4BE</button>
     </div>
+
     <div class="row">
-      <p class="hour" id="ftime4">4</p>
-      <textarea class="future description8 " cols="100"></textarea>
-      <button class="saveBtn">&#x1F4BE</button>
+      <!--Time section-->
+      <div class="col-md-1 hour" id="ftime4"></div>
+      <!--Description-->
+      <textarea class="future description col-md-10" "></textarea>
+      <!-- save button-->
+      <button class=" saveBtn col-md-1">&#x1F4BE</button>
     </div>
-    <div class="row">
-      <p class="hour" id="ftime5">4</p>
-      <textarea class="future description9" cols="100"></textarea>
-      <button class="saveBtn">&#x1F4BE</button>
-    </div>
+     
+
+    
 
   </div>
-<!--CDN -->
-<script src="https://code.jquery.com/jquery-3.5.0.min.js"
-    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="crossorigin="anonymous"></script>
-  
+  <!--CDN -->
+  <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.25.1/moment.min.js"></script>
-  
+
   <!--Js links-->
   <script src="./assets/javascript/script.js"></script>
 </body>
