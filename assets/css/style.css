@@ -84,10 +84,8 @@ textarea{
 button:hover {
   background-color: black
 }
-
-footer {
-  text-align: center;
-  border: black;
-  background-color: rgb(3, 3, 3);
-  color: #ffffff;
+textarea:hover {
+  background-color: whitesmoke
 }
+
+
