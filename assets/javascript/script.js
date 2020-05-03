@@ -37,24 +37,25 @@ getDescription();
 //Clic Event Fucntion for Save Button
 $(".saveBtn").on("click", function () {
     console.log(this);
-    
-// get Time from Text area
+    // get Time from Text area
     const IDtime = $(this).siblings(".description").attr("data-time");
-
-// get User Input
+    // get User Input
     const UserEnter = $(this).siblings(".description").val();
-
-// Store them to lOcal storage
+    // Store them to lOcal storage
     localStorage.setItem(IDtime, UserEnter);
 
-})
+});
 
+// Fonction to get Value From  Local Storage
 function getDescription() {
     const userInput = $(".description");
-    
-
-
- 
+    // for loop to retrieve Those Local Element
+    $(userInput).each(function (i, element) {
+        const IDtime = $(element).attr("data-time");
+        const UserEnter = localStorage.getItem(IDtime);
+        $(element).text(UserEnter);
+      
+    })
     
 }
 
